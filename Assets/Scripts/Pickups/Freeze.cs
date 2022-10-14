@@ -8,6 +8,7 @@ public class Freeze : Pickup
 
     public override void Pick()
     {
+        Debug.Log("Podniesiono Freeze");
         GameManager.Instance.FreezeTime(freezeTime);
         base.Pick();
     }

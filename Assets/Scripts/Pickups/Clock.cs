@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Diamond : Pickup
+public class Clock : Pickup
 {
+    public int time = 10;
+
     public override void Pick()
     {
-        Debug.Log("Podniesiono diament");
-        GameManager.Instance.AddDiamond();
+        Debug.Log("Podniesiono Clock");
+        GameManager.Instance.AddTime(time);
         base.Pick();
     }
 }
