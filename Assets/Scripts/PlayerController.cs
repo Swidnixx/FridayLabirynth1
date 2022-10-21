@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
     {
         if (grounded)
         {
+            velocity = 0;
             return;
         }
 

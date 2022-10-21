@@ -15,9 +15,16 @@ public class PortalTeleport : MonoBehaviour
 
         Debug.DrawLine(transform.position, transform.position + transform.up);
         Debug.DrawLine(transform.position, transform.position + portalToPlayer, Color.green);
+        Debug.Log("Dot: " + Vector3.Dot(transform.up, portalToPlayer));
+
         if (playerIsPassing)
         {
-
+            float dot = Vector3.Dot(transform.up, portalToPlayer);
+            if(dot < 0)
+            {
+                player.position = receiver.position;
+                player.forward = receiver.up;
+            }
         }
     }
 
@@ -25,6 +32,7 @@ public class PortalTeleport : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            Debug.Log("Player Collided");
             playerIsPassing = true;
         }
     }
@@ -33,6 +41,7 @@ public class PortalTeleport : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player Exit Collision");
             playerIsPassing = false;
         }
     }

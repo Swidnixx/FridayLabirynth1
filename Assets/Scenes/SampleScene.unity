@@ -1817,6 +1817,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3831004975320446654, guid: 8bedffb49f88d7d49a1d959fddcb05b9, type: 3}
   m_PrefabInstance: {fileID: 3831004976171822166}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &515016598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7383555350270463416, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+  m_PrefabInstance: {fileID: 1284262191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &515016599 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3798603236086846144, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+  m_PrefabInstance: {fileID: 1284262191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &515016600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515016598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac152097c8ef19746b8b67c4ffeabccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedPortal: {fileID: 880767328}
+  playerCam: {fileID: 963194227}
+  myCamera: {fileID: 729643590}
 --- !u!1 &534111912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +2602,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 37.609, y: 122.714, z: -12.969}
+--- !u!20 &729643590 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4107564785172242703, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+  m_PrefabInstance: {fileID: 1284262191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &748957524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3831004975320446654, guid: 8bedffb49f88d7d49a1d959fddcb05b9, type: 3}
@@ -2813,6 +2843,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3831004975320446654, guid: 8bedffb49f88d7d49a1d959fddcb05b9, type: 3}
   m_PrefabInstance: {fileID: 1259924226}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &880767327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7383555350270463416, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+  m_PrefabInstance: {fileID: 1447050580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &880767328 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3798603236086846144, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+  m_PrefabInstance: {fileID: 1447050580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &880767329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880767327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac152097c8ef19746b8b67c4ffeabccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedPortal: {fileID: 515016599}
+  playerCam: {fileID: 963194227}
+  myCamera: {fileID: 1885065884}
 --- !u!1 &897014196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,6 +4533,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4107564785172242703, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 5bf6944836ba11e44aa662ea78b7b967, type: 2}
+    - target: {fileID: 4839409306610576143, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7dc72329b54f5aa4ea0df101078274f1, type: 2}
     - target: {fileID: 7383555350270463416, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
       propertyPath: m_Name
       value: PortalB
@@ -4961,6 +5024,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4107564785172242703, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 22ae8a41be9c6a1468a528886b1371ab, type: 2}
+    - target: {fileID: 4839409306610576143, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9c5bb889ca5484c4faa1c3436eb1f158, type: 2}
     - target: {fileID: 7383555350270463416, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
       propertyPath: m_Name
       value: PortalA
@@ -5953,6 +6024,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823182443}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &1885065884 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4107564785172242703, guid: 00c25a711299fa34b9b059df246c2d83, type: 3}
+  m_PrefabInstance: {fileID: 1447050580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1904034053
 GameObject:
   m_ObjectHideFlags: 0
