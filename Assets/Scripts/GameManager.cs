@@ -109,4 +109,21 @@ public class GameManager : MonoBehaviour
     {
         this.time += time; 
     }
+
+    //Other Interactions
+    internal bool CheckTheKey(KeyColor keyColor)
+    {
+        switch(keyColor)
+        {
+            case KeyColor.Red:
+                return redKeys > 0;
+
+            case KeyColor.Green:
+                return greenKeys > 0;
+
+            case KeyColor.Gold:
+                return goldenKeys > 0;
+        }
+        return false;
+    }
 }

@@ -15,7 +15,7 @@ public class PortalTeleport : MonoBehaviour
 
         Debug.DrawLine(transform.position, transform.position + transform.up);
         Debug.DrawLine(transform.position, transform.position + portalToPlayer, Color.green);
-        Debug.Log("Dot: " + Vector3.Dot(transform.up, portalToPlayer));
+       // Debug.Log("Dot: " + Vector3.Dot(transform.up, portalToPlayer));
 
         if (playerIsPassing)
         {
