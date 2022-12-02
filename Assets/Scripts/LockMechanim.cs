@@ -7,6 +7,14 @@ public class LockMechanim : MonoBehaviour
     public DoorMechanim[] doorToOpen;
     public Key.KeyColor keyColor;
     bool playerInRange;
+    bool alreadyOpen = false; 
+
+    Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,15 +38,20 @@ public class LockMechanim : MonoBehaviour
     {
        if( Input.GetKeyDown(KeyCode.E) && playerInRange )
        {
-            bool playerHasProperKey = GameManager.Instance.CheckTheKey(keyColor);
-            if (playerHasProperKey)
+            if ( !alreadyOpen )
             {
-                Open(); 
+                bool playerHasProperKey = GameManager.Instance.CheckTheKey(keyColor);
+                if (playerHasProperKey)
+                {
+                    GameManager.Instance.UseTheKey(keyColor);
+                    animator.SetTrigger("open");
+                    alreadyOpen = true;
+                } 
             }
        }
     }
 
-    void Open()
+    public void Open()
     {
         foreach(DoorMechanim d in doorToOpen)
         {

@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
     //Game Flow Functions
     void Pause()
     {
@@ -125,5 +126,23 @@ public class GameManager : MonoBehaviour
                 return goldenKeys > 0;
         }
         return false;
+    }
+
+    internal void UseTheKey(KeyColor keyColor)
+    {
+        switch (keyColor)
+        {
+            case KeyColor.Red:
+               redKeys--;
+                break;
+
+            case KeyColor.Green:
+               greenKeys--;
+                break;
+
+            case KeyColor.Gold:
+               goldenKeys--;
+                break;
+        }
     }
 }
